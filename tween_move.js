@@ -77,7 +77,7 @@ function initGlist() {
   vertices = geometry.attributes.position.array;
   glist.push(vertices);
 
-  geometry = new THREE.TorusKnotBufferGeometry(120, 20, 300, 10, 3, 7);
+  geometry = new THREE.TorusKnotBufferGeometry(120, 20, 300, 20, 3, 7);
   vertices = geometry.attributes.position.array;
   glist.push(vertices);
 
@@ -89,7 +89,7 @@ function initGlist() {
 }
 
 function addPoints() {
-  const POINT_NUMBER = 6000;
+  const POINT_NUMBER = 10000;
 
   let geometry = new THREE.BufferGeometry();
   let pos = [];
