@@ -110,8 +110,8 @@ function addPoints() {
     transparent: true,
     opacity: 1,
     map: new THREE.TextureLoader().load("./gradient.png"),
-    depthWrite: false,
-    depthTest: false,
+    // depthWrite: false,
+    // depthTest: false,
   });
 
   points = new THREE.Points(geometry, material);
@@ -121,9 +121,9 @@ function addPoints() {
   new TWEEN.Tween(points.rotation)
     .to(
       {
-        y: Math.PI / 2,
+        y: Math.PI * 2,
       },
-      100000
+      400000
     )
     .repeat(Infinity)
     .start();
